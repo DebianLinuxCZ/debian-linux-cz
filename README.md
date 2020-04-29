@@ -33,6 +33,9 @@ Pro sestavení webu slouží tento příkaz.
 ```
 $ bundle exec jekyll build
 ```
-Statická verze stránek je vygenerovaná do adresáře `_site`. Pro nasazení stačí jeho obsah nahrát na server třeba přes FTP.
+Statická verze stránek je vygenerovaná do adresáře `_site`. Pro nasazení stačí jeho obsah nahrát na server třeba přes FTP. Pokud nechcete stránky vystavit přímo na doméně, ale pod nějakou cestou, přidejte ještě přepínač `--baseurl='/nejaka/cesta'`.
 
-Pokud nechcete stránky vystavit přímo na doméně, ale pod nějakou cestou, přidejte ještě přepínač `--baseurl='/nejaka/cesta'`.
+Následujícím příkazem je ještě možné ověřit (částečnou) validitu vygenerovaného HTML kódu:
+```
+$ bundle exec htmlproofer '_site' --disable-external --empty-alt-ignore --url-ignore '/feed/' --checks-to-ignore ImageCheck
+```
