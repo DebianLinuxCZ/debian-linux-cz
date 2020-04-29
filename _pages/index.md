@@ -4,7 +4,7 @@ layout: splash
 
 header:
   overlay_color: "#5e616c"
-  overlay_image: https://www.debian.org/Pics/futureprototype-bg.png
+  overlay_image: /assets/images/futureprototype-bg.png
   cta_label: "<i class='fa fa-download'></i> Stáhnout"
   cta_url: /stahnout-debian/
   caption: ''
