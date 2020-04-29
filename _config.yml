@@ -6,6 +6,8 @@ keywords: Linux, GNU/Linux, Debian, distribuce, operační systém, zprávy, nov
 remote_content:
   - name: 'rootcz-debian'
     url: 'https://www.root.cz/rss/n/debian/'
+  - name: 'debian-org-news'
+    url: 'https://www.debian.org/News/news'
 
 # Theme settings
 theme: minimal-mistakes-jekyll

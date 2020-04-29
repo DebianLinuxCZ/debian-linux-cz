@@ -15,6 +15,7 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-# Co je nového
+## Co je nového
 
 {% include rss_feed.html id='rss-feed-root-cz-debian' rss=site.data.rss_feeds.rootcz-debian limit=4 %}
+{% include rss_feed.html id='rss-feed-debian-org-news' rss=site.data.rss_feeds.debian-org-news limit=4 %}
