@@ -23,6 +23,17 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale: cs
 logo: /assets/images/debian-logo.svg
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: https://www.twitter.com/debiancz
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: https://www.facebook.com/pages/Debian-linuxcz/172367506107326
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/DebianLinuxCZ/
 atom_feed:
   path: /feed/ # blank (default) uses feed.xml
 analytics: # requires 'JEKYLL_ENV=production'
