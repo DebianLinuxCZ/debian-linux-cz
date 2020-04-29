@@ -23,7 +23,6 @@ feed:
 markdown: kramdown
 include: [
     '/_pages',
-    '.htaccess',
 ]
 exclude:
   - vendor
