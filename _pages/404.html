@@ -1,0 +1,21 @@
+---
+title: Stránka neexistuje
+permalink: /404.html
+layout: single
+sitemap: false
+---
+<p>
+  Tato stránka neexistuje. Asi jste hledali něco jiného, nebo následovali odkaz na náš starý web.
+</p>
+
+<p style="text-align: center">
+  <a id="old-web-link" href="#" target="_blank">&gt; Zkusit starý web &lt;</a>
+</p>
+
+<p style="text-align: center">
+  <a href="http://forum.debian-linux.cz/" target="_blank">&gt; Hledám pomoc &lt;</a>
+</p>
+
+<script>
+  document.getElementById('old-web-link').href = 'https://old.debian-linux.cz' + window.location.pathname + window.location.search + window.location.hash;
+</script>
