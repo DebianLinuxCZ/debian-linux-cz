@@ -16,7 +16,7 @@ locale: cs
 logo: /assets/images/debian-logo.svg
 atom_feed:
   path: /feed/ # blank (default) uses feed.xml
-analytics:
+analytics: # requires 'JEKYLL_ENV=production'
   provider: google-universal # false (default), "google", "google-universal", "custom"
   google:
     tracking_id: UA-3266139-3
