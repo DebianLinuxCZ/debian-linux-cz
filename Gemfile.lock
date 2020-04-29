@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (6.0.2.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
@@ -13,6 +19,9 @@ GEM
     eventmachine (1.2.7)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
+    feedparser (2.1.2)
+      logutils (>= 0.6.1)
+      textutils (>= 1.0.0)
     ffi (1.12.2)
     forwardable-extended (2.6.0)
     html-proofer (3.15.3)
@@ -28,6 +37,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    iniparser (1.0.1)
     jekyll (4.0.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -60,6 +70,7 @@ GEM
       jekyll
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.3.0)
     kramdown (2.2.1)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -68,6 +79,7 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logutils (0.6.1)
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
     minimal-mistakes-jekyll (4.19.1)
@@ -77,6 +89,7 @@ GEM
       jekyll-include-cache (~> 0.1)
       jekyll-paginate (~> 1.1)
       jekyll-sitemap (~> 1.3)
+    minitest (5.14.0)
     multipart-post (2.1.1)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
@@ -85,9 +98,12 @@ GEM
     octokit (4.18.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
+    open_uri_redirections (0.2.1)
     parallel (1.19.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    props (1.2.0)
+      iniparser (>= 0.1.0)
     public_suffix (4.0.4)
     rainbow (3.0.0)
     rb-fsevent (0.10.3)
@@ -95,6 +111,7 @@ GEM
       ffi (~> 1.0)
     rexml (3.2.4)
     rouge (3.18.0)
+    rubyzip (2.3.0)
     safe_yaml (1.0.5)
     sassc (2.3.0)
       ffi (~> 1.9)
@@ -103,20 +120,32 @@ GEM
       faraday (> 0.8, < 2.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    textutils (1.4.0)
+      activesupport
+      logutils (>= 0.6.1)
+      props (>= 1.1.2)
+      rubyzip (>= 1.0.0)
+    thread_safe (0.3.6)
     typhoeus (1.3.1)
       ethon (>= 0.9.0)
+    tzinfo (1.2.7)
+      thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
     yell (2.2.2)
+    zeitwerk (2.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  feedparser (~> 2.1, >= 2.1.2)
   html-proofer (~> 3.15, >= 3.15.3)
   jekyll (~> 4.0)
   jekyll-sitemap (~> 1.4)
   jekyll-tidy (~> 0.2.2)
+  json (~> 2.3)
   minimal-mistakes-jekyll (~> 4.19, >= 4.19.1)
+  open_uri_redirections (~> 0.2.1)
 
 BUNDLED WITH
    2.0.2
