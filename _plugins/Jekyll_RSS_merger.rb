@@ -1,8 +1,3 @@
-require 'json'
-require 'open-uri'
-require 'open_uri_redirections'
-require 'feedparser'
-
 module Jekyll_RSS_merger
 
   class FeedMerger
@@ -21,10 +16,6 @@ module Jekyll_RSS_merger
         feeds[to_merge['key']] = { 'name'=>to_merge['key'], 'title'=>to_merge['title'], 'items'=>all_items.sort_by { |it| it['published'] }.reverse }
       end
     end
-  end
-
-  Jekyll::Hooks.register :site, :post_read do |site|
-    FeedMerger.merge(site)
   end
 
 end
