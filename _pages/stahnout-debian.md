@@ -13,4 +13,4 @@ Debian můžete stáhnout ze tří oficiálních českých zrcadel. Na všech t�
 
 Pokud používáte **BitTorrent**, doporučujeme na některém ze zrcadel navštívit adresář `/current/i386/bt-dvd/`, kde naleznete příslušné torrenty k instalačním DVD médiím. Pokud preferujete přímé stažení ISO obrazů, navštivte adresář `/current/i386/iso-dvd/`.
 
-Obrazy je potřeba vypálit na DVD média a nechat z nich počítač nabootovat. Poté pokračujte podle instrukcí v [české instalační příručce](http://www.debian.org/releases/stable/i386/index.html.cs).
+Obrazy je potřeba vypálit na DVD média a nechat z nich počítač nabootovat. Poté pokračujte podle instrukcí v [české instalační příručce](https://www.debian.org/releases/stable/i386/).
