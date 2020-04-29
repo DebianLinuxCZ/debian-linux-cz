@@ -16,3 +16,4 @@ intro:
 {% include feature_row id="intro" type="center" %}
 
 {% include rss_feed.html id='rss-feed-all' rss=site.data.rss_feeds.all limit=8 %}
+{% include rss_feed.html id='rss-feed-all' rss=site.data.rss_feeds.forum limit=5 %}
