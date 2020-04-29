@@ -1,8 +1,6 @@
 main:
   - title: Domovská stránka
     url: /
-  - title: Zprávičky
-    url: /zpravicky/
   - title: Co je Debian?
     url: /co-je-debian/
   - title: Stáhnout
