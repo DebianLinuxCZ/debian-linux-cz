@@ -13,7 +13,7 @@ remote_content:
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale: cs
-logo: https://www.debian.org/Pics/openlogo-50.png
+logo: /assets/images/debian-logo.svg
 atom_feed:
   path: /feed/ # blank (default) uses feed.xml
 analytics:
