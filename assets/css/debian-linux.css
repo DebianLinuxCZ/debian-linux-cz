@@ -31,3 +31,17 @@
     display: none;
   }
 }
+
+@media (min-width: 48em) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .columns > * {
+    flex: 1;
+    padding: 0 1%;
+  }
+  .columns.two > * {
+    width: 48%;
+  }
+}
