@@ -1,5 +1,5 @@
 main:
-  - title: Domovská stránka
+  - title: Domů
     url: /
   - title: Co je Debian?
     url: /co-je-debian/

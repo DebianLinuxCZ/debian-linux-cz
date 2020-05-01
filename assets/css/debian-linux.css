@@ -1,0 +1,33 @@
+@media (min-width: 80em) {
+  body::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -999;
+    background-image: url('../images/debian-logo.svg');
+    background-size: 22% auto;
+    background-repeat: no-repeat;
+    background-position: top 1em left 1em;
+    opacity: 0.25;
+  }
+
+  body.layout--splash::after {
+    background-size: auto 20.5em;
+    z-index: -99;
+  }
+
+  body.layout--splash .page__hero--overlay {
+    z-index: -100;
+  }
+
+  #site-nav {
+    background-color: transparent;
+  }
+
+  #site-nav .site-logo {
+    display: none;
+  }
+}
