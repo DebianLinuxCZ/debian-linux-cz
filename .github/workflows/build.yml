@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch: # allows to be run manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+      - name: Cache installed Gems for the project
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Build site
+        run: make all_in_container
+      - name: Save built site
+        uses: actions/upload-artifact@v3
+        with:
+          name: _site
+          path: _site
+          retention-days: 30

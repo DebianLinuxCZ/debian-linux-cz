@@ -10,11 +10,9 @@ remote_content:
     url: 'https://forum.debian-linux.cz/index.php?type=rss2;action=.xml;sa=news'
   - name: 'debian-org-news'
     url: 'https://www.debian.org/News/news'
-  - name: 'planet-debian'
-    url: 'https://planet.debian.org/rss20.xml'
 
 merge_rss:
-  - key: all
+  - key: news
     title: 'Co je nového'
     feeds:
       - 'rootcz-debian'
@@ -54,9 +52,10 @@ include: [
 ]
 exclude:
   - vendor
-  - Gemfile
-  - Gemfile.lock
   - README.md
+  - scripts
 plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-last-modified-at
   - jekyll-tidy

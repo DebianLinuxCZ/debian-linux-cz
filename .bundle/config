@@ -1,0 +1,4 @@
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
+BUNDLE_WITH: "remote_content_plugin:test"
