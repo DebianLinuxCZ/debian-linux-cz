@@ -12,7 +12,7 @@ Obsah všech stránek je v adresáři `_pages` a je psaný v HTML nebo Markdownu
 - [Syntax | kramdown](https://kramdown.gettalong.org/syntax.html)
 
 ### Příprava
-Abyste byli schopni spustit níže uvedené příkazy, je nutné mít nainstalované [Ruby 3.1](https://www.ruby-lang.org/en/documentation/installation/) a GNU Make.
+Abyste byli schopni spustit níže uvedené příkazy, je nutné mít nainstalované [Ruby 2.7](https://www.ruby-lang.org/en/documentation/installation/), které je [výchozí v Debianu](https://packages.debian.org/bullseye/ruby), a GNU Make.
 
 Před prvním sestavením (nebo po změně souboru `Gemfile`) je potřeba stáhnout potřebné závislosti.
 ```
