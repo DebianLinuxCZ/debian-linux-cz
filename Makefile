@@ -1,5 +1,5 @@
 export JEKYLL_ENV=production
-HTML_PROOFER_OPTIONS=--disable-external=true --enforce-https=false --ignore-urls="/feed/"
+HTML_PROOFER_OPTIONS=--disable-external=true --ignore-urls="/feed/"
 undefine BUNDLE_APP_CONFIG # let bundler use config from .bundle; in bash it would be 'unset BUNDLE_APP_CONFIG'
 
 .DEFAULT_GOAL := all

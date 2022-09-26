@@ -3,14 +3,15 @@ title: Stáhnout Debian
 permalink: /stahnout-debian/
 layout: single
 ---
-Debian můžete stáhnout ze tří oficiálních českých zrcadel. Na všech těchto zdrojích je k dispozici stejný obsah.
+Debian můžete stáhnout z následujících zrcadel umístěných v různých částech světa. Na všech těchto zdrojích je k dispozici stejný obsah.
 
-- debian-cd.mirror.web4u.cz: [FTP](ftp://debian-cd.mirror.web4u.cz/) [HTTP](http://debian-cd.mirror.web4u.cz/)
-- debian.ignum.cz: [FTP](ftp://debian.ignum.cz/debian-cd/)
-- debian.mirror.dkm.cz: [FTP](ftp://debian.mirror.dkm.cz/debian-cd/) [HTTP](http://debian.mirror.dkm.cz/debian-cd/)
-- debian.superhosting.cz: [HTTP](http://debian.superhosting.cz/debian-cd/)
-- debian.sh.cvut.cz: [FTP](ftp://debian.sh.cvut.cz/debian-cd/) [HTTP](http://debian.sh.cvut.cz/debian-cd/) – **dočasně mimo provoz**
+- 🇸🇪 cdimage.debian.org: [HTTPS](https://cdimage.debian.org/debian-cd/)
+- 🇨🇿 debian.ignum.cz: [HTTPS](https://debian.ignum.cz/debian-cd/)
+- 🇨🇿 ftp.linux.cz: [HTTPS](https://ftp.linux.cz/pub/linux/debian-cd/)
+- 🇨🇿 mirror.dkm.cz: [HTTPS](https://mirror.dkm.cz/debian-cd/)
+- 🇨🇿 mirrors.nic.cz: [HTTPS](https://mirrors.nic.cz/debian-cd/)
+- [další...](https://www.debian.org/CD/http-ftp/)
 
-Pokud používáte **BitTorrent**, doporučujeme na některém ze zrcadel navštívit adresář `/current/i386/bt-dvd/`, kde naleznete příslušné torrenty k instalačním DVD médiím. Pokud preferujete přímé stažení ISO obrazů, navštivte adresář `/current/i386/iso-dvd/`.
+Pokud používáte **BitTorrent**, doporučujeme na některém ze zrcadel navštívit adresář `/current/amd64/bt-dvd/`, kde naleznete příslušné torrenty k instalačnímu DVD médiu. Pokud preferujete přímé stažení ISO obrazu, navštivte adresář `/current/amd64/iso-dvd/`.
 
-Obrazy je potřeba vypálit na DVD média a nechat z nich počítač nabootovat. Poté pokračujte podle instrukcí v [české instalační příručce](https://www.debian.org/releases/stable/i386/).
+Obraz je potřeba vypálit na DVD médium a nechat z něj počítač nabootovat. Poté pokračujte podle instrukcí v [české instalační příručce](https://www.debian.org/releases/stable/amd64/).
