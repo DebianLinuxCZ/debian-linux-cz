@@ -55,7 +55,5 @@ exclude:
   - README.md
   - scripts
 plugins:
-  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-last-modified-at
   - jekyll-tidy
