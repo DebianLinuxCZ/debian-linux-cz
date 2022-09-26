@@ -1,12 +1,19 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 4.0'
-gem 'minimal-mistakes-jekyll', '~> 4.19', '>= 4.19.1'
+gem 'jekyll', '~> 4.2', '>= 4.2.2'
+gem 'webrick', '~> 1.7'
+gem 'minimal-mistakes-jekyll', '~> 4.24'
+gem 'jekyll-seo-tag', '~> 2.8'
 gem 'jekyll-sitemap', '~> 1.4'
+gem 'jekyll-last-modified-at', '~> 1.3'
 gem 'jekyll-tidy', '~> 0.2.2'
-gem 'open_uri_redirections', '~> 0.2.1'
-gem 'json', '~> 2.3'
-gem 'feedparser', '~> 2.1', '>= 2.1.2'
+
+group :remote_content_plugin do
+  gem 'open_uri_redirections', '~> 0.2.1'
+  gem 'json', '~> 2.6', '>= 2.6.2'
+  gem 'feedparser', '~> 2.2'
+  gem 'rss', '~> 0.2.9'
+end
 
 group :test do
-  gem 'html-proofer', '~> 3.15', '>= 3.15.3'
+  gem 'html-proofer', '~> 4.4'
 end
