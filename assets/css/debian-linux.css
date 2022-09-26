@@ -1,34 +1,59 @@
 @media (min-width: 80em) {
-  body::after {
+  /**
+   * Show Debian logo on background at the top of every page on desktop devices
+   * (80em width is consistent with the source theme breakpoints)
+   */
+
+  /* BEGIN home page */
+
+  body.layout--splash .page__hero--overlay .wrapper {
+    position: relative;
+  }
+
+  body.layout--splash .page__hero--overlay .wrapper::after {
     content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    height: 450px; /* approximately (menu header) + (overlay) + (overlay bottom margin) */
     position: absolute;
+    top: calc(1em - 100px - 3em); /* (desired position from the top of the page) - (menu header) - (wrapper padding) */
+    left: 1em;
     z-index: -999;
     background-image: url('../images/debian-logo.svg');
-    background-size: 22% auto;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top 1em left 1em;
     opacity: 0.25;
   }
 
-  body.layout--splash::after {
-    background-size: auto 20.5em;
-    z-index: -99;
+  /* END home page */
+
+  /* BEGIN regular pages */
+
+  #main {
+    position: relative;
   }
 
-  body.layout--splash .page__hero--overlay {
-    z-index: -100;
+  body:not(.layout--splash) #main::after {
+    content: "";
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: calc(1em - 100px); /* (desired position from the top of the page) - (menu header) */
+    left: 0;
+    z-index: -999;
+    background-image: url('../images/debian-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
   }
+
+  /* END regular pages */
 
   #site-nav {
-    background-color: transparent;
+    background: unset; /* remove background from the page title in the menu header */
   }
 
   #site-nav .site-logo {
-    display: none;
+    display: none; /* hide the regular logo from the menu header */
   }
 }
 
