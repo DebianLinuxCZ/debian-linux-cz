@@ -2,9 +2,7 @@ source 'https://rubygems.org'
 gem 'jekyll', '~> 4.2', '>= 4.2.2'
 gem 'webrick', '~> 1.7'
 gem 'minimal-mistakes-jekyll', '~> 4.24'
-gem 'jekyll-seo-tag', '~> 2.8'
 gem 'jekyll-sitemap', '~> 1.4'
-gem 'jekyll-last-modified-at', '~> 1.3'
 gem 'jekyll-tidy', '~> 0.2.2'
 
 group :remote_content_plugin do
