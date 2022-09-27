@@ -4,6 +4,8 @@ gem 'webrick', '~> 1.7'
 gem 'minimal-mistakes-jekyll', '~> 4.24'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-tidy', '~> 0.2.2'
+gem 'pluto', '~> 1.3', '>= 1.3.4'
+gem 'activerecord', '~> 6.1', '>= 6.1.7'
 
 group :remote_content_plugin do
   gem 'open_uri_redirections', '~> 0.2.1'

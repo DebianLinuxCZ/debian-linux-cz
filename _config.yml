@@ -4,19 +4,8 @@ description: Debian-Linux.cz podporuje operační systém GNU/Linux Debian před
 keywords: Linux, GNU/Linux, Debian, distribuce, operační systém, zprávy, novinky
 
 remote_content:
-  - name: 'rootcz-debian'
-    url: 'https://www.root.cz/rss/n/debian/'
   - name: 'forum'
     url: 'https://forum.debian-linux.cz/index.php?type=rss2;action=.xml;sa=news'
-  - name: 'debian-org-news'
-    url: 'https://www.debian.org/News/news'
-
-merge_rss:
-  - key: news
-    title: 'Co je nového'
-    feeds:
-      - 'rootcz-debian'
-      - 'debian-org-news'
 
 # Theme settings
 theme: minimal-mistakes-jekyll
@@ -51,9 +40,13 @@ include: [
     '/_pages',
 ]
 exclude:
+  - _lib
   - vendor
-  - README.md
   - scripts
+  - Makefile
+  - README.md
+  - planet.db
+  - planet.ini
 plugins:
   - jekyll-sitemap
   - jekyll-tidy

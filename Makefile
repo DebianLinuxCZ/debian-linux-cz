@@ -11,8 +11,14 @@ prepare:
 	gem install bundler -v "~> 2.3"
 	bundle install
 
+.PHONY: feeds_to_posts
+feeds_to_posts:
+	bundle exec pluto update ./planet.ini
+	bundle exec ruby ./_lib/planet.rb/planet.rb
+
 .PHONY: build
 build:
+	make feeds_to_posts
 	bundle exec jekyll build
 
 .PHONY: check
@@ -21,6 +27,7 @@ check:
 
 .PHONY: run
 run:
+	make feeds_to_posts
 	bundle exec jekyll serve
 
 .PHONY: all_in_container

@@ -1,12 +1,12 @@
 # Debian-Linux.cz
 
-Repositář pro web Debian-Linux.cz. Web používá generátor statických stránek [Jekyll](https://jekyllrb.com/).
+Repositář pro web Debian-Linux.cz. Web používá generátor statických stránek [Jekyll](https://jekyllrb.com/). Repositář naklonujte příkazem `git clone --recurse-submodules https://github.com/DebianLinuxCZ/debian-linux-cz.git`.
 
 ### Šablona
 Web používá šablonu [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes).
 
 ### Obsah
-Obsah všech stránek je v adresáři `_pages` a je psaný v HTML nebo Markdownu. Analogicky příspěvky na blog jsou v adresáři `_posts`. Pár stránek o Markdownu:
+Obsah všech stránek je v adresáři `_pages` a je psaný v HTML nebo Markdownu. Pár stránek o Markdownu:
 - [Mastering Markdown - GitHub Guides](https://guides.github.com/features/mastering-markdown/)
 - [Basic writing and formatting syntax - User Documentation](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Syntax | kramdown](https://kramdown.gettalong.org/syntax.html)

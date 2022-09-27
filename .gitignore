@@ -4,3 +4,5 @@ _site
 vendor
 *.gem
 .jekyll-cache
+_posts
+planet.db
