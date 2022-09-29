@@ -16,7 +16,7 @@
     height: 450px; /* approximately (menu header) + (overlay) + (overlay bottom margin) */
     position: absolute;
     top: calc(1em - 100px - 3em); /* (desired position from the top of the page) - (menu header) - (wrapper padding) */
-    left: 1em;
+    left: 0;
     z-index: -999;
     background-image: url('../images/debian-logo.svg');
     background-size: contain;
