@@ -14,6 +14,7 @@ prepare:
 .PHONY: build
 build:
 	bundle exec jekyll build
+	rm _site/feed.xml # remove 'feed.xml' produced by the jekyll-feed plugin
 
 .PHONY: check
 check:
