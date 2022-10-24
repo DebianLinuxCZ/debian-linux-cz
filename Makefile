@@ -11,8 +11,12 @@ prepare:
 	gem install bundler -v "~> 2.3"
 	bundle install
 
+.PHONY: clean
+clean:
+	bundle exec jekyll clean
+
 .PHONY: build
-build:
+build: clean
 	bundle exec jekyll build
 
 .PHONY: check
