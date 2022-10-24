@@ -24,7 +24,7 @@ check:
 	bundle exec htmlproofer _site $(HTML_PROOFER_OPTIONS)
 
 .PHONY: run
-run:
+run: clean
 	bundle exec jekyll serve
 
 .PHONY: all_in_container
