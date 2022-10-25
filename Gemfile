@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'jekyll', '~> 4.3'
-gem 'webrick', '~> 1.7'
 gem 'minimal-mistakes-jekyll', '~> 4.24'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-tidy', '~> 0.2.2'
@@ -13,5 +12,5 @@ group :remote_content_plugin do
 end
 
 group :test do
-  gem 'html-proofer', '~> 4.4'
+  gem "html-proofer", "~> 4.4", ">= 4.4.3"
 end

@@ -25,7 +25,7 @@ GEM
       textutils (>= 1.0.0)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    html-proofer (4.4.1)
+    html-proofer (4.4.3)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogiri (~> 1.13)
@@ -135,14 +135,14 @@ GEM
     unicode-display_width (2.3.0)
     webrick (1.7.0)
     yell (2.2.2)
-    zeitwerk (2.6.0)
+    zeitwerk (2.6.1)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   feedparser (~> 2.2)
-  html-proofer (~> 4.4)
+  html-proofer (~> 4.4, >= 4.4.3)
   jekyll (~> 4.3)
   jekyll-sitemap (~> 1.4)
   jekyll-tidy (~> 0.2.2)
@@ -150,7 +150,6 @@ DEPENDENCIES
   minimal-mistakes-jekyll (~> 4.24)
   open_uri_redirections (~> 0.2.1)
   rss (~> 0.2.9)
-  webrick (~> 1.7)
 
 BUNDLED WITH
    2.3.22
