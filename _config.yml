@@ -20,7 +20,7 @@ merge_rss:
 
 generate_rss:
   from: news
-  link: 'https://debian-linux.cz'
+  link: 'https://www.debian-linux.cz'
   path: /feed
 
 # Theme settings
