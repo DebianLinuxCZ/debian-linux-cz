@@ -13,7 +13,6 @@ command -v podman > /dev/null 2>&1 || {
 }
 
 ${CONTAINER_RUN} \
-  -e JEKYLL_ENV="${JEKYLL_ENV}" \
   -e LC_ALL='C.UTF-8' `# required for html-proofer to work correctly in the container` \
   --workdir "${PWD}" \
   -v "${PWD}:${PWD}:Z" \
