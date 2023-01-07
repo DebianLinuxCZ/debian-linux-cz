@@ -1,4 +1,3 @@
-export JEKYLL_ENV=production
 HTML_PROOFER_OPTIONS=--disable-external=true
 undefine BUNDLE_APP_CONFIG # let bundler use config from .bundle; in bash it would be 'unset BUNDLE_APP_CONFIG'
 
@@ -17,7 +16,7 @@ clean:
 
 .PHONY: build
 build: clean
-	bundle exec jekyll build
+	JEKYLL_ENV=production bundle exec jekyll build
 
 .PHONY: check
 check:
@@ -29,4 +28,4 @@ run: clean
 
 .PHONY: all_in_container
 all_in_container:
-	JEKYLL_ENV=$(JEKYLL_ENV) bash ./scripts/run-in-container.sh make all
+	bash ./scripts/run-in-container.sh make all
