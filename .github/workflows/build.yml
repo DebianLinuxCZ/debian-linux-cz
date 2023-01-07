@@ -7,8 +7,18 @@ on:
   pull_request:
   workflow_dispatch: # allows to be run manually
 
+env:
+  DEFAULT_CONTAINER_IMAGE_ID: stable_ruby2.7
+
 jobs:
   build:
+    strategy:
+      matrix:
+        container_image:
+          - id: stable_ruby2.7
+            image: 'docker.io/library/ruby:2.7-bullseye' # Ruby 2.7 (in Debian 11 - stable)
+          - id: testing_ruby3.1
+            image: 'docker.io/library/ruby:3.1-bullseye' # Ruby 3.1 (expected in Debian 12 - testing)
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -18,12 +28,21 @@ jobs:
         uses: actions/cache@v3
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          key: ${{ matrix.container_image.id }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-gems-
+            ${{ matrix.container_image.id }}-gems-
       - name: Build site
+        env:
+          CONTAINER_IMAGE: ${{ matrix.container_image.image }}
         run: make all_in_container
-      - name: Save built site
+      - name: Save built site (${{ matrix.container_image.id }})
+        uses: actions/upload-artifact@v3
+        with:
+          name: _site_${{ matrix.container_image.id }}
+          path: _site
+          retention-days: 30
+      - name: Save built site (default)
+        if: ${{ matrix.container_image.id == env.DEFAULT_CONTAINER_IMAGE_ID }}
         uses: actions/upload-artifact@v3
         with:
           name: _site
