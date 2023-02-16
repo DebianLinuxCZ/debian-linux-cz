@@ -1,3 +1,6 @@
+---
+---
+
 @media (min-width: 80em) {
   /**
    * Show Debian logo on background at the top of every page on desktop devices
@@ -6,22 +9,26 @@
 
   /* BEGIN home page */
 
-  body.layout--splash .page__hero--overlay .wrapper {
-    position: relative;
-  }
+  body.layout--splash {
+    .page__hero--overlay {
+      .wrapper {
+        position: relative;
 
-  body.layout--splash .page__hero--overlay .wrapper::after {
-    content: "";
-    width: 100%;
-    height: 450px; /* approximately (menu header) + (overlay) + (overlay bottom margin) */
-    position: absolute;
-    top: calc(1em - 100px - 3em); /* (desired position from the top of the page) - (menu header) - (wrapper padding) */
-    left: 0;
-    z-index: -999;
-    background-image: url('../images/debian-logo.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.25;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 450px; /* approximately (menu header) + (overlay) + (overlay bottom margin) */
+          position: absolute;
+          top: calc(1em - 100px - 3em); /* (desired position from the top of the page) - (menu header) - (wrapper padding) */
+          left: 0;
+          z-index: -999;
+          background-image: url('../images/debian-logo.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.25;
+        }
+      }
+    }
   }
 
   /* END home page */
@@ -50,10 +57,10 @@
 
   #site-nav {
     background: unset; /* remove background from the page title in the menu header */
-  }
 
-  #site-nav .site-logo {
-    display: none; /* hide the regular logo from the menu header */
+    .site-logo {
+      display: none; /* hide the regular logo from the menu header */
+    }
   }
 }
 
@@ -61,12 +68,14 @@
   .columns {
     display: flex;
     flex-wrap: wrap;
-  }
-  .columns > * {
-    flex: 1;
-    padding: 0 1%;
-  }
-  .columns.two > * {
-    width: 48%;
+
+    & > * {
+      flex: 1;
+      padding: 0 1%;
+    }
+
+    &.two > * {
+      width: 48%;
+    }
   }
 }

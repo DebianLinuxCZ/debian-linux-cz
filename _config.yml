@@ -49,6 +49,9 @@ analytics: # requires 'JEKYLL_ENV=production'
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: assets/css
+  style: compressed
 include: [
     '/_pages',
 ]
