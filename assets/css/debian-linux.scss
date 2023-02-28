@@ -1,6 +1,24 @@
 ---
 ---
 
+footer {
+  display: flex;
+  flex-direction: column;
+
+  .page__footer-follow {
+    order: 1;
+  }
+
+  .page__footer-custom-license {
+    order: 2;
+    font-size: 0.6875em;
+  }
+
+  .page__footer-copyright {
+    order: 3;
+  }
+}
+
 @media (min-width: 80em) {
   /**
    * Show Debian logo on background at the top of every page on desktop devices
