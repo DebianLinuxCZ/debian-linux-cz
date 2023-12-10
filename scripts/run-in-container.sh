@@ -3,7 +3,7 @@
 set -e
 set -o pipefail
 
-CONTAINER_IMAGE=${CONTAINER_IMAGE:-'docker.io/library/ruby:2.7-bullseye'}
+CONTAINER_IMAGE=${CONTAINER_IMAGE:-'docker.io/library/ruby:3.1-bookworm'}
 COMMAND=${@}
 
 CONTAINER_RUN='podman run'
