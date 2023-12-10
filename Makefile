@@ -7,7 +7,7 @@ all: prepare build check
 
 .PHONY: prepare
 prepare:
-	gem install bundler -v "~> 2.3"
+	gem install bundler -v "~> 2.4"
 	bundle install
 
 .PHONY: clean
