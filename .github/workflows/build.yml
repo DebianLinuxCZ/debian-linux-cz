@@ -8,7 +8,7 @@ on:
   workflow_dispatch: # allows to be run manually
 
 env:
-  DEFAULT_CONTAINER_IMAGE_ID: stable_ruby2.7
+  DEFAULT_CONTAINER_IMAGE_ID: ruby3.1
 
 jobs:
   build:
@@ -16,10 +16,10 @@ jobs:
       fail-fast: false
       matrix:
         container_image:
-          - id: stable_ruby2.7
-            image: 'docker.io/library/ruby:2.7-bullseye' # Ruby 2.7 (in Debian 11 - stable)
-          - id: testing_ruby3.1
-            image: 'docker.io/library/ruby:3.1-bullseye' # Ruby 3.1 (expected in Debian 12 - testing)
+          - id: ruby3.1
+            image: 'docker.io/library/ruby:3.1-bookworm' # Ruby 3.1 (in Debian 12 - stable)
+          - id: ruby3.2
+            image: 'docker.io/library/ruby:3.2-bookworm'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
