@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 4.3', '>= 4.3.2'
+gem 'jekyll', '~> 4.3'
 gem 'minimal-mistakes-jekyll', '~> 4.24'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-tidy', '~> 0.2.2'
