@@ -28,6 +28,7 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale: cs
 logo: /assets/images/debian-logo.svg
+copyright_url: /o-tomto-webu/
 footer:
   links:
     - label: "Twitter"
