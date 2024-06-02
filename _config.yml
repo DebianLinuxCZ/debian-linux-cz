@@ -61,5 +61,6 @@ exclude:
   - README.md
   - scripts
 plugins:
+  - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-tidy
