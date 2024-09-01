@@ -8,7 +8,7 @@ group :remote_content_plugin do
   gem 'open_uri_redirections', '~> 0.2.1'
   gem 'json', '~> 2.7'
   gem 'feedparser', '~> 2.2'
-  gem 'rss', '~> 0.3.0'
+  gem 'rss', '~> 0.3.1'
 end
 
 group :test do
