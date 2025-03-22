@@ -22,7 +22,9 @@ jobs:
           - id: ruby3.2
             image: 'docker.io/library/ruby:3.2-bookworm'
           - id: ruby3.3
-            image: 'docker.io/library/ruby:3.3-bookworm'
+            image: 'docker.io/library/ruby:3.3-bookworm' # Ruby 3.3 (will be in Debian 13, now testing)
+          - id: ruby3.4
+            image: 'docker.io/library/ruby:3.4-bookworm'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
