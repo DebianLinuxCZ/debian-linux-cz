@@ -27,7 +27,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Cache installed Gems for the project
         uses: actions/cache@v4
         with:
