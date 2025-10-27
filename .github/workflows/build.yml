@@ -40,14 +40,14 @@ jobs:
           CONTAINER_IMAGE: ${{ matrix.container_image.image }}
         run: make all_in_container
       - name: Save built site (${{ matrix.container_image.id }})
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: _site_${{ matrix.container_image.id }}
           path: _site
           retention-days: 30
       - name: Save built site (default)
         if: ${{ matrix.container_image.id == env.DEFAULT_CONTAINER_IMAGE_ID }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: _site
           path: _site
