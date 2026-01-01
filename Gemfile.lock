@@ -154,7 +154,7 @@ GEM
       ffi (~> 1.0)
     rexml (3.4.4)
     rouge (4.6.1)
-    rss (0.3.1)
+    rss (0.3.2)
       rexml
     rubyzip (3.2.1)
     safe_yaml (1.0.5)
@@ -203,7 +203,7 @@ DEPENDENCIES
   json (~> 2.16)
   minimal-mistakes-jekyll (~> 4.27, >= 4.27.3)
   open_uri_redirections (~> 0.2.1)
-  rss (~> 0.3.1)
+  rss (~> 0.3.2)
 
 BUNDLED WITH
    2.6.9
