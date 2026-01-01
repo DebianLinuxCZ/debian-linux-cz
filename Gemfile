@@ -6,7 +6,7 @@ gem 'jekyll-tidy', '~> 0.2.2'
 
 group :remote_content_plugin do
   gem 'open_uri_redirections', '~> 0.2.1'
-  gem 'json', '~> 2.16'
+  gem 'json', '~> 2.18'
   gem 'feedparser', '~> 2.2', '>= 2.2.1'
   gem 'rss', '~> 0.3.2'
 end
