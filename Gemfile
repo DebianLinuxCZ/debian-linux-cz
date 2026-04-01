@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll', '~> 4.4', '>= 4.4.1'
-gem 'minimal-mistakes-jekyll', '~> 4.27', '>= 4.27.3'
+gem 'minimal-mistakes-jekyll', '~> 4.28'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-tidy', '~> 0.2.2'
 
