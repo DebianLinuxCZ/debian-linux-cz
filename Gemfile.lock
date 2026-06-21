@@ -270,7 +270,7 @@ DEPENDENCIES
   jekyll-sitemap (~> 1.4)
   jekyll-tidy (~> 0.2.2)
   json (>= 2.19.9)
-  minimal-mistakes-jekyll (~> 4.27, >= 4.27.3)
+  minimal-mistakes-jekyll (>= 4.28)
   open_uri_redirections (>= 0.2.1)
   rss (>= 0.3.3)
 
