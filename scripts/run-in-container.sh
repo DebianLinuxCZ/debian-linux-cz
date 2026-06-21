@@ -3,7 +3,7 @@
 set -e
 set -o pipefail
 
-CONTAINER_IMAGE=${CONTAINER_IMAGE:-'docker.io/library/ruby:3.1-bookworm'}
+CONTAINER_IMAGE=${CONTAINER_IMAGE:-'docker.io/library/ruby:3.3-trixie'}
 COMMAND=${@}
 
 CONTAINER_RUN='podman run'
@@ -20,7 +20,7 @@ ${CONTAINER_RUN} \
   -v "${PWD}:${PWD}:Z" \
   --pull=always \
   --rm=true \
-  --network host \
+  -p 4000:4000 \
   -it \
   --entrypoint=/bin/bash \
   "${CONTAINER_IMAGE}" -c "${COMMAND}"
